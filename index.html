@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JengaFlow | Automated Lead Generation & Business Management Systems</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 50%, #1d4ed8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, rgba(14, 165, 233, 0.15), transparent 50%),
+                        radial-gradient(circle at bottom left, rgba(37, 99, 235, 0.1), transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="./logo.PNG" alt="JengaFlow Logo" class="h-12 w-auto rounded-lg">
+                    <span class="text-2xl font-extrabold tracking-tight text-slate-900">Jenga<span class="text-blue-600">Flow</span></span>
+                </div>
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                    <a href="#features" class="hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#solutions" class="hover:text-blue-600 transition-colors">Solutions</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl hover:bg-blue-700 transition-all shadow-md shadow-blue-500/10 hover:shadow-lg hover:shadow-blue-500/20">Get Started</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-slate-700 focus:outline-none">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+            <a href="#features" class="block py-2 text-slate-600 font-medium">Services</a>
+            <a href="#solutions" class="block py-2 text-slate-600 font-medium">Solutions</a>
+            <a href="#contact" class="block text-center bg-blue-600 text-white px-5 py-3 rounded-xl font-medium">Get Started</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient relative pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-blue-50 text-blue-700 px-4 py-1.5 rounded-full text-sm font-semibold tracking-wide">
+                        <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+                        <span>Next-Gen Software Solutions for Kenyan SMEs</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-none">
+                        Automate Your Growth. <br class="hidden sm:inline">
+                        <span class="gradient-text">Streamline Your Flow.</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-xl mx-auto md:mx-0 font-normal leading-relaxed">
+                        We build custom lead generation systems, secure database platforms, and intelligent business management tools tailored to help companies in Kenya eliminate manual operations and scale predictably.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto text-center bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-800 transition-all shadow-lg shadow-slate-900/10">
+                            Build Your System
+                        </a>
+                        <a href="https://wa.me/254741067333" target="_blank" class="w-full sm:w-auto text-center border-2 border-slate-200 bg-white text-slate-700 px-8 py-3.5 rounded-xl font-bold hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-lg"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+                <!-- Floating Card / Tech Graphic Graphic -->
+                <div class="md:col-span-5 relative hidden md:block">
+                    <div class="bg-white p-8 rounded-2xl shadow-2xl border border-slate-100 relative z-10 space-y-6 transform hover:-translate-y-1 transition-transform duration-300">
+                        <div class="flex justify-between items-center border-b border-slate-100 pb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400">jengaflow_core_engine.py</span>
+                        </div>
+                        <div class="space-y-4 font-mono text-sm">
+                            <div class="text-blue-600">import jengaflow_automation as jf</div>
+                            <div class="text-slate-700"># Automate customer acquisition pipelines</div>
+                            <div>
+                                <span class="text-purple-600">business</span> = jf.Connect(<span class="text-emerald-600">"Kenyan_SME"</span>)
+                            </div>
+                            <div>
+                                <span class="text-purple-600">leads</span> = business.capture_inbound_traffic()
+                            </div>
+                            <div>
+                                <span class="text-purple-600">crm_system</span> = jf.Database(engine=<span class="text-emerald-600">"PostgreSQL"</span>)
+                            </div>
+                            <div class="text-emerald-600 bg-emerald-50 p-2 rounded border border-emerald-100 text-xs flex items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-emerald-500"></i>
+                                <span>Status: Running. Operations optimized.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Decorative backdrops -->
+                    <div class="absolute -top-6 -right-6 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute -bottom-6 -left-6 w-72 h-72 bg-sky-400/10 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar Section -->
+    <section class="bg-white border-y border-slate-100 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight" data-target="100">0%</div>
+                    <div class="text-sm font-medium text-slate-500 mt-1">Manual Input Eliminated</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight" data-target="24">0</div>
+                    <div class="text-sm font-medium text-slate-500 mt-1">7 Real-Time Cloud Monitoring</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight flex justify-center items-center"><span data-target="10">0</span>x</div>
+                    <div class="text-sm font-medium text-slate-500 mt-1">Faster Data Processing</div>
+                </div>
+                <div>
+                    <div class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">Postgres</div>
+                    <div class="text-sm font-medium text-slate-500 mt-1">Production-Grade Reliability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Features Section -->
+    <section id="features" class="py-20 md:py-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-bold text-blue-600 uppercase tracking-widest">Core Capabilities</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight text-slate-900">What We Build for Modern Businesses</p>
+                <p class="text-slate-600">We replace messy spreadsheets, dropped phone leads, and clunky platforms with high-performance digital ecosystems.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl shadow-slate-100/50 border border-slate-100 space-y-4 hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
+                    <div class="bg-blue-50 text-blue-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-filter"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Lead Generation Pipelines</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Inbound software engines tailored to capture prospective clients, structure their requests, and route them directly to your team before the lead goes cold.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl shadow-slate-100/50 border border-slate-100 space-y-4 hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
+                    <div class="bg-sky-50 text-sky-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Robust Database Infrastructure</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Relational, multi-tier platforms utilizing production backends like PostgreSQL to cleanly store, track, and manage company data securely.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl shadow-slate-100/50 border border-slate-100 space-y-4 hover:border-blue-500/20 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-300">
+                    <div class="bg-indigo-50 text-indigo-600 w-12 h-12 rounded-xl flex items-center justify-center text-xl font-bold">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Operations Automation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Lightweight custom CRM portals built with modern UIs and Tailwind CSS to facilitate effortless tracking of clients, inventory, or broker interactions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus / Solutions Framework Section -->
+    <section id="solutions" class="bg-slate-900 text-white py-20 md:py-28 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-xs font-bold text-blue-400 uppercase tracking-widest">Tailored Architectures</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Built for Speed. Deployed for Stability.</h2>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        We avoid heavy, over-engineered tools that slow down deployment. Instead, we use ultra-efficient modern software architectures designed to get business workflows operational in days, not months.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-blue-500/20 text-blue-400 p-1.5 rounded-lg mt-0.5"><i class="fa-solid fa-check text-xs"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Role-Based Access Control</h4>
+                                <p class="text-slate-400 text-sm">Secure authorization layers mapping permissions for admins, managers, and external agents.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="bg-blue-500/20 text-blue-400 p-1.5 rounded-lg mt-0.5"><i class="fa-solid fa-check text-xs"></i></div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Production-Grade Cloud Management</h4>
+                                <p class="text-slate-400 text-sm">Continuous delivery environments keeping cloud systems up, responsive, and logs clean.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700/60 shadow-xl space-y-6">
+                    <h3 class="text-xl font-bold text-white">Ideal for Industries Like:</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-700/40 flex items-center space-x-3">
+                            <i class="fa-solid fa-house-chimney text-blue-400 text-xl"></i>
+                            <span class="font-semibold text-sm">Real Estate Portals</span>
+                        </div>
+                        <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-700/40 flex items-center space-x-3">
+                            <i class="fa-solid fa-store text-sky-400 text-xl"></i>
+                            <span class="font-semibold text-sm">Digital Marketplaces</span>
+                        </div>
+                        <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-700/40 flex items-center space-x-3">
+                            <i class="fa-solid fa-briefcase text-indigo-400 text-xl"></i>
+                            <span class="font-semibold text-sm">Professional Services</span>
+                        </div>
+                        <div class="p-4 bg-slate-900/50 rounded-xl border border-slate-700/40 flex items-center space-x-3">
+                            <i class="fa-solid fa-truck-ramp-box text-emerald-400 text-xl"></i>
+                            <span class="font-semibold text-sm">SME Supply Chains</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative subtle accent background blur -->
+        <div class="absolute right-0 bottom-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-12 bg-slate-50 rounded-3xl p-8 sm:p-12 lg:p-16 border border-slate-100 shadow-xl">
+                <div class="md:col-span-5 space-y-6">
+                    <h2 class="text-3xl font-extrabold tracking-tight text-slate-900">Let’s Build Something Exceptional</h2>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Ready to remove operational friction or launch your automated customer platform? Get in touch with our solutions engineer directly via email, call, or form submission.
+                    </p>
+                    <div class="space-y-4 pt-4 border-t border-slate-200">
+                        <a href="mailto:jengaflowsolutions@gmail.com" class="flex items-center space-x-3 group text-slate-700 hover:text-blue-600 transition-colors">
+                            <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md shadow-slate-200/50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span class="font-medium text-sm sm:text-base">jengaflowsolutions@gmail.com</span>
+                        </a>
+                        <a href="tel:+254741067333" class="flex items-center space-x-3 group text-slate-700 hover:text-blue-600 transition-colors">
+                            <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-md shadow-slate-200/50 text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span class="font-medium text-sm sm:text-base">+254 741 067333</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Lead Capture Form -->
+                <div class="md:col-span-7">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="f6922e97-daed-4db2-a140-294e15067824">
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Business/Your Name</label>
+                                <input type="text" name="name" required placeholder="e.g. Moses Otieno" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 transition-all text-sm">
+                            </div>
+                            <div class="space-y-1.5">
+                                <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Phone Number</label>
+                                <input type="tel" name="phone" required placeholder="e.g. 0741067333" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 transition-all text-sm">
+                            </div>
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Email Address</label>
+                            <input type="email" name="email" required placeholder="name@company.com" class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 transition-all text-sm">
+                        </div>
+                        <div class="space-y-1.5">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Project Requirements / Headache to Solve</label>
+                            <textarea name="message" rows="4" required placeholder="Tell us briefly about the system or website framework you need engineered..." class="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-slate-800 placeholder-slate-400 focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/10 transition-all text-sm resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl hover:bg-blue-700 shadow-lg shadow-blue-500/10 hover:shadow-xl hover:shadow-blue-500/20 transition-all text-sm">
+                            Submit System Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-100 py-8 text-center text-xs text-slate-400 font-medium">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>&copy; 2026 JengaFlow Solutions. All rights reserved. Built for modern business execution.</div>
+            <div class="flex space-x-6">
+                <a href="mailto:jengaflowsolutions@gmail.com" class="hover:text-slate-600">Email</a>
+                <a href="tel:+254741067333" class="hover:text-slate-600">Call Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Layer -->
+    <script>
+        // Responsive Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu when links are clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Animated Stats Increment Counter
+        const stats = document.querySelectorAll('[data-target]');
+        
+        const countUp = (element) => {
+            const target = +element.getAttribute('data-target');
+            let count = 0;
+            const speed = target / 50; // adjustments for ticking pace
+
+            const updateCount = () => {
+                count += speed;
+                if (count < target) {
+                    element.innerText = Math.floor(count);
+                    setTimeout(updateCount, 20);
+                } else {
+                    element.innerText = target;
+                }
+            };
+            updateCount();
+        };
+
+        // Trigger animation when block comes into view
+        const observerOptions = {
+            root: null,
+            threshold: 0.3
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    stats.forEach(stat => countUp(stat));
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const statsSection = document.querySelector('[data-target]').parentElement.parentElement;
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+    </script>
+</body>
+</html>
